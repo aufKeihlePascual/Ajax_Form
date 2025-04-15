@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/ajax.js" defer></script>  
+    <title>Philippine Address Form</title>
+</head>
+<body>
+
+    <div class="form-container">
+      <h2>Philippine Address Form</h2>
+      <form id="addressForm">
+        
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+  
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+  
+        <label for="region">Region</label>
+        <select id="region" name="region" required>
+          <option value="">Select Region</option>
+        </select>
+  
+        <label for="province">Province</label>
+        <select id="province" name="province" required disabled>
+          <option value="">Select Province</option>
+        </select>
+  
+        <label for="city">City/Municipality</label>
+        <select id="city" name="city" required disabled>
+          <option value="">Select City/Municipality</option>
+        </select>
+  
+        <label for="barangay">Barangay</label>
+        <select id="barangay" name="barangay" required disabled>
+          <option value="">Select Barangay</option>
+        </select>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>   
+  </body>
+</html>
